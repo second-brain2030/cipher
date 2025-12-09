@@ -9,9 +9,11 @@ llm:
   baseURL: http://10.103.1.2:9001/v1
   maxIterations: 50
 
-# Embedding configuration - disabling for now as user only specified LLM
+# Embedding configuration - using local Ollama with BGE-M3 (excellent for Chinese+English)
 embedding:
-  disabled: true
+  type: ollama
+  model: bge-m3
+  baseUrl: http://localhost:11434
 
 systemPrompt:
   enabled: true
