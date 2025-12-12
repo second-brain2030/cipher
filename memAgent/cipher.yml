@@ -10,10 +10,16 @@ llm:
   maxIterations: 50
 
 # Embedding configuration - using local Ollama with BGE-M3 (excellent for Chinese+English)
+# embedding:
+#   type: ollama
+#   model: bge-m3
+#   baseUrl: http://localhost:11434
+
+# New embedding configuration - local A100 model
 embedding:
   type: ollama
   model: bge-m3
-  baseUrl: http://localhost:11434
+  baseUrl: http://10.103.1.31:11434
 
 systemPrompt:
   enabled: true
