@@ -15,7 +15,7 @@ llm:
 #   model: bge-m3
 #   baseUrl: http://localhost:11434
 
-# New embedding configuration - local A100 model
+# New embedding configuration - RTX 3090 remote GPU (optimal performance)
 embedding:
   type: ollama
   model: bge-m3
